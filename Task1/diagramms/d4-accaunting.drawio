@@ -1,0 +1,135 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="DFD4 - Внутренний учетный процесс (1С)" id="dfd4">
+    <mxGraphModel dx="1991" dy="1989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="buh_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1С:Бухгалтерия&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="810" y="80" width="420" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="trade_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1С:Торговля и склад&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="300" y="100" width="240" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="styles" style="html=1;fontSize=12;fontColor=#1E1E1E;" parent="1" visible="0" />
+        <mxCell id="kkm" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;ККМ&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Контрольно-кассовая машина&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1250" y="-30" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="storekeeper" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Сотрудник&lt;br&gt;склада&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry y="165" width="60" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="proc41" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;4.1&lt;/div&gt;&lt;div&gt;Учет движения&lt;/div&gt;&lt;div&gt;товаров&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="353" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc42" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;4.2&lt;/div&gt;&lt;div&gt;Внутриплатформенный&lt;/div&gt;&lt;div&gt;обмен (OLE)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="580" y="360" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc43" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;4.3&lt;/div&gt;&lt;div&gt;Свод финансового&lt;/div&gt;&lt;div&gt;и складского учета&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1040" y="260" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="trade_db" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;База ТМЦ&lt;/div&gt;&lt;div&gt;[1С:Торговля]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="360" y="120" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="buh_db" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;База учета&lt;/div&gt;&lt;div&gt;[1С:Бухгалтерия]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="850" y="110" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="report" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Финансовая&lt;br&gt;отчетность&lt;/div&gt;&lt;div&gt;[Результат]&lt;/div&gt;" style="shape=folder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="910" y="410" width="210" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="storekeeper_conn" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="storekeeper" target="proc41" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="110" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="223" />
+              <mxPoint x="280" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow41" value="&lt;div&gt;Ручной ввод: Накладные&lt;/div&gt;&lt;div&gt;[Приход/расход ТМЦ]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="storekeeper" target="proc41" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="340" as="sourcePoint" />
+            <mxPoint x="340" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="370" />
+              <mxPoint x="250" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow42" value="&lt;div&gt;Запись данных&lt;/div&gt;&lt;div&gt;[ТМЦ]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc41" target="trade_db" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="sourcePoint" />
+            <mxPoint x="400" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow43" value="&lt;div&gt;Чтение данных&lt;/div&gt;&lt;div&gt;[для обмена]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="trade_db" target="proc42" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="130" as="sourcePoint" />
+            <mxPoint x="520" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="160" />
+              <mxPoint x="600" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow44" value="&lt;div&gt;OLE: Данные учета ТМЦ&lt;/div&gt;&lt;div&gt;[Поступление/списание]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=0.993;exitY=0.576;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="proc42" target="proc43" edge="1">
+          <mxGeometry x="0.2402" y="-7" width="160" relative="1" as="geometry">
+            <mxPoint x="749.9999999999995" y="326.42857142857156" as="sourcePoint" />
+            <mxPoint x="830" y="305" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow46" value="&lt;div&gt;Запись проводок&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc43" target="buh_db" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="930" y="235" as="sourcePoint" />
+            <mxPoint x="960" y="165" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow47" value="&lt;div&gt;Данные для сверки&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;" parent="1" source="buh_db" target="proc43" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="990" y="155" as="sourcePoint" />
+            <mxPoint x="940" y="235" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1070" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow48" value="&lt;div&gt;Формирование&lt;/div&gt;&lt;div&gt;отчетности&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc43" target="report" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="950" y="315" as="sourcePoint" />
+            <mxPoint x="990" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_inside_trade" value="" style="endArrow=none;html=1;strokeWidth=1;strokeColor=#666666;dashed=1;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="110" as="sourcePoint" />
+            <mxPoint x="340" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №4: Внутренний учетный процесс (1С)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="160" y="-20" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="comment" value="&lt;div style=&quot;font-size:12px;&quot;&gt;ℹ Взаимодействие через встроенный механизм OLE платформы 1С&lt;br&gt;Сопоставление данных склада (4.1) и кассовых данных (из DFD №2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=1;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="400" y="470" width="400" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр/Папка - Хранилище&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель&lt;/div&gt;&lt;div&gt;➡️ Стрелка - Поток данных&lt;/div&gt;&lt;div&gt;📦 Пунктир - Граница системы&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="50" y="490" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="link_to_dfd2" value="&lt;div style=&quot;font-size:11px;color:#1E6F9F;&quot;&gt;← Связь с DFD №2 (Процесс оплаты)&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=middle;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1460" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tIBXgcGgtjSmLUwNnJvw-1" value="" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" edge="1" parent="1" source="kkm" target="proc43">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="930" y="40" as="sourcePoint" />
+            <mxPoint x="923" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1320" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

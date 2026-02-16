@@ -1,0 +1,150 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="DFD2 - Оплата услуги" id="dfd2">
+    <mxGraphModel dx="2210" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="accounting_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Учетная система&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="827" y="180" width="360" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="styles" style="html=1;fontSize=12;fontColor=#1E1E1E;" parent="1" visible="0" />
+        <mxCell id="patient" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Пациент&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Источник данных&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="400" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kkm" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;ККМ&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Контрольно-кассовая машина&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="590" y="490" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cashier" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Кассир&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="240" y="535" width="60" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="proc21" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.1&lt;/div&gt;&lt;div&gt;Расчет&lt;/div&gt;&lt;div&gt;стоимости&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="280" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc22" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.2&lt;/div&gt;&lt;div&gt;Прием&lt;/div&gt;&lt;div&gt;оплаты&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="450" y="290" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc23" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.3&lt;/div&gt;&lt;div&gt;Передача данных&lt;/div&gt;&lt;div&gt;в учетную систему&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="560" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc24" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.4&lt;/div&gt;&lt;div&gt;Отражение в&lt;/div&gt;&lt;div&gt;бухгалтерском учете&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="900" y="40" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="buh" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1С:Бухгалтерия&lt;/div&gt;&lt;div&gt;[Получатель]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="990" y="360" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fiscal_data" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Фискальные данные&lt;/div&gt;&lt;div&gt;[Обезличенные]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" value="&lt;div&gt;Устно: Услуга&lt;/div&gt;&lt;div&gt;[ФИО, перечень услуг]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="patient" target="proc21" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="300" as="sourcePoint" />
+            <mxPoint x="320" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" value="&lt;div&gt;Передача денежных средств&lt;/div&gt;&lt;div&gt;[Наличные/карта]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="patient" target="proc22" edge="1">
+          <mxGeometry x="-0.3145" width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="350" as="sourcePoint" />
+            <mxPoint x="480" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="360" />
+              <mxPoint x="360" y="330" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" value="&lt;div&gt;Акт приема оплаты&lt;/div&gt;&lt;div&gt;[Команда на печать чека]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc22" target="kkm" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="340" as="sourcePoint" />
+            <mxPoint x="730" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="620" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" value="&lt;div&gt;TCP/IP, OLE: Данные чека&lt;/div&gt;&lt;div&gt;[Сумма, дата, время, фискальные данные]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="kkm" target="proc23" edge="1">
+          <mxGeometry x="0.5459" y="10" width="160" relative="1" as="geometry">
+            <mxPoint x="810" y="380" as="sourcePoint" />
+            <mxPoint x="750" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="360" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow5" value="&lt;div&gt;Запись данных&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc23" target="fiscal_data" edge="1">
+          <mxGeometry x="0.266" y="18" width="160" relative="1" as="geometry">
+            <mxPoint x="760" y="200" as="sourcePoint" />
+            <mxPoint x="910" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="890" y="280" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow6" value="&lt;div&gt;Фискальные данные&lt;/div&gt;&lt;div&gt;[для учета]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc23" target="proc24" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="760" y="150" as="sourcePoint" />
+            <mxPoint x="860" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="140" />
+              <mxPoint x="820" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow7" value="&lt;div&gt;Поступление ДС&lt;/div&gt;&lt;div&gt;[обезличенно]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc24" target="buh" edge="1">
+          <mxGeometry x="-0.2585" y="-2" width="160" relative="1" as="geometry">
+            <mxPoint x="910" y="140" as="sourcePoint" />
+            <mxPoint x="1010" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="180" />
+              <mxPoint x="980" y="280" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_conn2122" value="&lt;div&gt;Сумма к оплате&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc21" target="proc22" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="220" as="sourcePoint" />
+            <mxPoint x="480" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="220" />
+              <mxPoint x="460" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cashier_conn1" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="cashier" target="proc21" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="300" y="440" as="sourcePoint" />
+            <mxPoint x="320" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="400" />
+              <mxPoint x="320" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cashier_conn2" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="cashier" target="proc22" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="460" as="sourcePoint" />
+            <mxPoint x="480" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="400" />
+              <mxPoint x="440" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №2: Процесс оплаты медицинской услуги&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="240" y="10" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="problem_comment" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#CC0000;&quot;&gt;⚠ КЛЮЧЕВАЯ ПРОБЛЕМА&lt;/div&gt;&lt;div&gt;Разрыв между фактическим оказанием услуги и фискализацией.&lt;/div&gt;&lt;div&gt;Финансовые данные в 1С хранятся в обезличенном виде (нет связи с пациентом и услугами).&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6E6;strokeColor=#CC0000;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="420" y="650" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр - Хранилище/Получатель&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель (Кассир)&lt;/div&gt;&lt;div&gt;➡️ Стрелка - Поток данных&lt;/div&gt;&lt;div&gt;🔴 Красная рамка - Проблема/разрыв&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="970" y="520" width="200" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

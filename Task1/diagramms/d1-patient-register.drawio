@@ -1,0 +1,150 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="DFD1 - Запись пациента" id="dfd1">
+    <mxGraphModel dx="2210" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="filesystem_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Файловая система&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="1050" y="30" width="240" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="styles" style="html=1;fontSize=12;fontColor=#1E1E1E;" parent="1" visible="0" />
+        <mxCell id="patient" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Пациент&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Источник данных&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="-10" y="390" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="process11" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1.1&lt;/div&gt;&lt;div&gt;Сбор первичных&lt;/div&gt;&lt;div&gt;данных&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="260" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="process12" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1.2&lt;/div&gt;&lt;div&gt;Ввод в&lt;/div&gt;&lt;div&gt;Patients.xlsx&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="610" y="50" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="process13" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1.3&lt;/div&gt;&lt;div&gt;Запись в&lt;/div&gt;&lt;div&gt;Journal-Doctor.xlsx&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="640" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="process14" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1.4&lt;/div&gt;&lt;div&gt;Создание папки&lt;/div&gt;&lt;div&gt;пациента&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="600" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Администратор&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="220" y="505" width="60" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="storage1" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Patients.xlsx&lt;/div&gt;&lt;div&gt;[Excel файл]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="50" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="storage2" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Journal-Doctor-FIO.xlsx&lt;/div&gt;&lt;div&gt;[Excel файл]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="190" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="storage3" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Папка пациента&lt;/div&gt;&lt;div&gt;[Файловая система]&lt;/div&gt;" style="shape=folder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="330" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" value="&lt;div&gt;ФИО, Телефон, Жалобы&lt;/div&gt;&lt;div&gt;[Устно]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="patient" target="process11" edge="1">
+          <mxGeometry x="0.0004" width="160" relative="1" as="geometry">
+            <mxPoint x="160" y="300" as="sourcePoint" />
+            <mxPoint x="320" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="280" />
+              <mxPoint x="260" y="220" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" value="&lt;div&gt;ФИО, Телефон, Адрес,&lt;/div&gt;&lt;div&gt;Email, Хронические болезни&lt;/div&gt;&lt;div&gt;[Ручной ввод]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="process12" target="storage1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="680" y="100" as="sourcePoint" />
+            <mxPoint x="800" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_conn12" value="Передача данных" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;labelBackgroundColor=none;" parent="1" source="process11" target="process12" edge="1">
+          <mxGeometry x="0.0025" width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="180" as="sourcePoint" />
+            <mxPoint x="560" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="140" />
+              <mxPoint x="520" y="120" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" value="&lt;div&gt;ФИО пациента,&lt;/div&gt;&lt;div&gt;Дата, Время&lt;/div&gt;&lt;div&gt;[Ручной ввод]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="process13" target="storage2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="680" y="240" as="sourcePoint" />
+            <mxPoint x="800" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_conn13" value="Передача данных" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;labelBackgroundColor=none;labelBorderColor=none;" parent="1" source="process11" target="process13" edge="1">
+          <mxGeometry x="-0.4598" y="-2" width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="200" as="sourcePoint" />
+            <mxPoint x="560" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="200" />
+              <mxPoint x="510" y="250" />
+              <mxPoint x="570" y="250" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" value="Создание папки с именем пациента [Ручное]&lt;br&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="process14" target="storage3" edge="1">
+          <mxGeometry x="0.0012" width="160" relative="1" as="geometry">
+            <mxPoint x="680" y="380" as="sourcePoint" />
+            <mxPoint x="800" y="360" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_conn14" value="Передача данных" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;labelBackgroundColor=none;" parent="1" source="process11" target="process14" edge="1">
+          <mxGeometry x="0.5682" y="-4" width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="220" as="sourcePoint" />
+            <mxPoint x="560" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="260" />
+              <mxPoint x="520" y="340" />
+            </Array>
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="admin_conn1" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" parent="1" source="admin" target="process11" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="370" as="sourcePoint" />
+            <mxPoint x="350" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="admin_conn2" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="admin" target="process12" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="390" as="sourcePoint" />
+            <mxPoint x="600" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="380" />
+              <mxPoint x="540" y="170" />
+              <mxPoint x="570" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="admin_conn3" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="admin" target="process13" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="410" as="sourcePoint" />
+            <mxPoint x="600" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="430" />
+              <mxPoint x="560" y="300" />
+              <mxPoint x="600" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="admin_conn4" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="admin" target="process14" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="420" as="sourcePoint" />
+            <mxPoint x="600" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xAq7r4Te5aAub06KlugT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="filesystem_boundary">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="250.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №1: Процесс записи пациента на приём&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry y="10" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр/Папка - Хранилище&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель&lt;/div&gt;&lt;div&gt;➡️ Стрелка - Поток данных&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="1090" y="505" width="200" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
