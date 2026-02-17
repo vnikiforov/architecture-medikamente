@@ -1,0 +1,164 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Узкие места миграции" id="ishikawa-corrected">
+    <mxGraphModel dx="1141" dy="783" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object label="&lt;b&gt;Узкие места миграции на микросервисы&lt;/b&gt;&lt;br&gt;Снижение производительности, сбои интеграций, утечки ПДн" id="effect">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;fontColor=#ffffff;strokeColor=#C94C4C;strokeWidth=2;fontSize=14;align=center;" parent="1" vertex="1">
+            <mxGeometry x="820" y="400" width="320" height="100" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Инфраструктура" id="bone1">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="820" y="450" as="sourcePoint" />
+              <mxPoint x="470" y="110" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="600" y="110" />
+                <mxPoint x="480" y="110" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Единый сервер без кластера (но есть компетенции для развёртывания)" id="infra1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFE66D;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="230" y="30" width="240" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Недостаточная пропускная способность сети для межсервисного трафика" id="infra2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFE66D;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="200" y="120" width="220" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Программное обеспечение" id="bone2">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" target="bone2-end" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="820" y="450" as="sourcePoint" />
+              <mxPoint x="400" y="350" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="600" y="350" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="bone2-end" parent="1" vertex="1">
+          <mxGeometry x="400" y="350" width="1" height="1" as="geometry" />
+        </mxCell>
+        <object label="Отсутствие единой модели данных → дублирование ПДн" id="soft1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#B8E6F9;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="190" y="230" width="200" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Синхронные вызовы → каскадные отказы" id="soft2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#B8E6F9;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="140" y="320.5" width="220" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Нет механизмов распределённых транзакций (Saga)" id="soft3">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#B8E6F9;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="180" y="400" width="200" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Интеграции" id="bone3">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="820" y="450" as="sourcePoint" />
+              <mxPoint x="390" y="550" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="590" y="550" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="Устаревшие протоколы (OLE) вместо REST/gRPC" id="int1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="140" y="490" width="210" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Ручная интеграция с лабораторией" id="int2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="150" y="560" width="230" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Данные" id="bone4">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="820" y="450" as="sourcePoint" />
+              <mxPoint x="480" y="690" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="650" y="690" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="bone4-end" parent="1" vertex="1">
+          <mxGeometry x="400" y="650" width="1" height="1" as="geometry" />
+        </mxCell>
+        <object label="Файлы на общем диске без версионирования" id="data1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="240" y="630" width="200" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Отсутствие классификации ПДн → сложность шифрования" id="data2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FECACA;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="270" y="700" width="220" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Персонал" id="bone5">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" target="bone5-end" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="980" y="450" as="sourcePoint" />
+              <mxPoint x="1150" y="300" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="1050" y="300" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="bone5-end" parent="1" vertex="1">
+          <mxGeometry x="1150" y="300" width="1" height="1" as="geometry" />
+        </mxCell>
+        <object label="Есть экспертиза: Java, K8s, Postgres (техдиректор)" id="hr1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#C3E6CB;strokeColor=#4A6572;fontSize=11;fontStyle=1;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="1180" y="220" width="240" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Есть навыки развёртывания кластеров (админ сети)" id="hr2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#C3E6CB;strokeColor=#4A6572;fontSize=11;fontStyle=1;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="1190" y="290" width="240" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Нужно обучение: распределённые транзакции, безопасность ПДн" id="hr3">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFE66D;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="1180" y="400" width="250" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Процессы" id="bone6">
+          <mxCell style="endArrow=block;html=1;strokeWidth=3;strokeColor=#4A6572;fontSize=13;fontStyle=1;" parent="1" source="effect" target="bone6-end" edge="1">
+            <mxGeometry width="500" relative="1" as="geometry">
+              <mxPoint x="980" y="450" as="sourcePoint" />
+              <mxPoint x="1150" y="600" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="1050" y="600" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="bone6-end" parent="1" vertex="1">
+          <mxGeometry x="1150" y="600" width="1" height="1" as="geometry" />
+        </mxCell>
+        <object label="Нет практик работы с распределёнными транзакциями" id="proc1">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFD8A8;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="1180" y="520" width="240" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="Отсутствие методологии декомпозиции монолита" id="proc2">
+          <mxCell style="shape=note;whiteSpace=wrap;html=1;fillColor=#FFD8A8;strokeColor=#4A6572;fontSize=11;fontColor=#404040;" parent="1" vertex="1">
+            <mxGeometry x="1190" y="591" width="240" height="60" as="geometry" />
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

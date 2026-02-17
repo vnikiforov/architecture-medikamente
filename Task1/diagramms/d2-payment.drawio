@@ -1,0 +1,169 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="DFD2 - Оплата услуги (Целевое состояние)" id="dfd2_target">
+    <mxGraphModel dx="2056" dy="2035" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mis_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Медицинская информационная система (МИС)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="140" y="30" width="610" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="processing_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#2E7D32;&quot;&gt;Платежный шлюз (PCI DSS)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontColor=#2E7D32;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="290" y="620" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="accounting_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Учетная система&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="987" y="160" width="360" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="styles" style="html=1;fontSize=12;fontColor=#1E1E1E;" parent="1" visible="0" />
+        <mxCell id="patient" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Пациент&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Источник данных&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="-180" y="460" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mis_source" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;МИС&lt;/div&gt;&lt;div&gt;[Внутренний источник]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Данные об услугах&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="80" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_gateway" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Платежный&lt;br&gt;шлюз&lt;/div&gt;&lt;div&gt;[PCI DSS]&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="350" y="640" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kkm" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;ККМ / ФН&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:11px;&quot;&gt;Фискальный накопитель&lt;/font&gt;&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="827" y="490" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Врач&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="245" width="60" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="cashier" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Кассир&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="90" y="670" width="60" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="proc21" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.1&lt;/div&gt;&lt;div&gt;Автоматический&lt;/div&gt;&lt;div&gt;расчет стоимости&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;привязка к ID пациента&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="370" y="50" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="price_list" value="&lt;div style=&quot;font-size:12px;font-weight:bold;&quot;&gt;Модуль&lt;br&gt;прайс-листа&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF2E0;strokeColor=#F2A03D;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="200" y="220" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="proc22" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.2&lt;/div&gt;&lt;div&gt;Прием оплаты&lt;/div&gt;&lt;div&gt;с токенизацией&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;TLS + токен&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="220" y="350" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc23" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.3&lt;/div&gt;&lt;div&gt;Передача данных&lt;/div&gt;&lt;div&gt;с обогащением&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;ID+услуги+токен&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="580" y="320" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="proc24" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;2.4&lt;/div&gt;&lt;div&gt;Отражение в учете&lt;/div&gt;&lt;div&gt;с привязкой&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;ID пациента&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="205" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="mis_db" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;БД МИС&lt;/div&gt;&lt;div&gt;[Связка пациент-услуга-платеж]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="550" y="190" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="buh" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;1С:Бухгалтерия&lt;/div&gt;&lt;div&gt;[с ID пациента]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="370" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor_conn" value="фиксирует услуги" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.065;entryY=0.67;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="doctor" target="mis_source" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" value="&lt;div&gt;Запрос стоимости по кодам&lt;/div&gt;&lt;div&gt;[коды услуг]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="mis_source" target="proc21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" value="&lt;div&gt;Запрос цен&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="proc21" target="price_list" edge="1">
+          <mxGeometry x="-0.037" y="2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="160" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" value="&lt;div&gt;Стоимость услуг&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="price_list" target="proc21" edge="1">
+          <mxGeometry x="0.3904" y="14" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="340" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4" value="&lt;div&gt;Счет с ID пациента&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.53;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="proc21" target="mis_db" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow5" value="&lt;div&gt;Сумма к оплате, ID&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="mis_db" target="proc22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="310" />
+              <mxPoint x="340" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow6" value="&lt;div&gt;Передача денежных средств&lt;/div&gt;&lt;div&gt;[карта/наличные]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="patient" target="proc22" edge="1">
+          <mxGeometry x="-0.3842" y="-2" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="450" />
+              <mxPoint x="210" y="415" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow7" value="&lt;div&gt;TLS: Данные карты&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#2E7D32;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc22" target="payment_gateway" edge="1">
+          <mxGeometry x="0.2345" y="24" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="550" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow8" value="&lt;div&gt;TLS: Токен платежа&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#2E7D32;endFill=1;curved=1;labelBackgroundColor=none;exitX=0.526;exitY=0.035;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="payment_gateway" target="proc22" edge="1">
+          <mxGeometry x="-0.2317" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="510" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cashier_conn" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="cashier" target="proc22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow9" value="&lt;div&gt;ID, Токен, Сумма, Услуги&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc22" target="proc23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow10" value="&lt;div&gt;Фискальные данные&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc23" target="kkm" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="480" />
+              <mxPoint x="660" y="520" />
+              <mxPoint x="730" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow11" value="&lt;div&gt;Шифрованная очередь&lt;/div&gt;&lt;div&gt;[ID+сумма+услуги+токен]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#2E7D32;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc23" target="proc24" edge="1">
+          <mxGeometry x="0.0491" y="-14" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="360" />
+              <mxPoint x="800" y="350" />
+              <mxPoint x="920" y="320" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow12" value="&lt;div&gt;Запись с ID пациента&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=0.559;exitY=0.968;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="proc24" target="buh" edge="1">
+          <mxGeometry x="-0.4523" y="20" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1060" y="400" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lineage" value="&lt;div&gt;Data Lineage: терминал → МИС → 1С&lt;/div&gt;" style="text;html=1;fontSize=10;align=center;verticalAlign=middle;strokeColor=none;fillColor=#CDA2BE;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="760" y="180" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №2: Процесс оплаты медицинской услуги (Целевое состояние)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="60" y="-40" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="improvement_comment" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#2E7D32;&quot;&gt;✅ ЦЕЛЕВОЕ СОСТОЯНИЕ&lt;/div&gt;&lt;div&gt;• Токенизация платежных данных (PCI DSS)&lt;/div&gt;&lt;div&gt;• Полная связка пациент-услуга-платеж в 1С&lt;/div&gt;&lt;div&gt;• Шифрованные очереди между МИС и 1С&lt;/div&gt;&lt;div&gt;• Data Lineage: прослеживаемость данных&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;align=left;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="590" y="825" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр - Хранилище&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель&lt;/div&gt;&lt;div&gt;🟢 Зеленая граница/стрелка - Безопасность (TLS/PCI)&lt;/div&gt;&lt;div&gt;📦 Пунктир - Граница системы&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="930" y="770" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="problem_comment" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#CC0000;&quot;&gt;⚠ БЫЛО: Разрыв между услугой и фискализацией&lt;/div&gt;&lt;div&gt;Данные в 1С хранились обезличенно&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6E6;strokeColor=#CC0000;strokeWidth=1;fontSize=11;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="830" y="660" width="320" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
