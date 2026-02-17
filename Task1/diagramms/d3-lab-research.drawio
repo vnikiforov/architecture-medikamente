@@ -1,143 +1,135 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
-  <diagram name="DFD3 - Лабораторный процесс" id="dfd3">
-    <mxGraphModel dx="2302" dy="1039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="DFD3 - Лабораторный процесс (Целевое состояние)" id="dfd3_target">
+    <mxGraphModel dx="2529" dy="2367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="filesystem_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Файловая система&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
-          <mxGeometry x="840" y="90" width="380" height="360" as="geometry" />
+        <mxCell id="mis_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Медицинская информационная система (МИС)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="-60" y="30" width="600" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="dmz_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#2E7D32;&quot;&gt;Защищенный периметр клиники (DMZ)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontColor=#2E7D32;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
+          <mxGeometry x="600" y="227.5" width="310" height="165" as="geometry" />
         </mxCell>
         <mxCell id="lab_boundary" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Внешняя лаборатория&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;strokeWidth=2;fontColor=#666666;align=left;verticalAlign=bottom;spacingTop=0;spacing=10;dashPattern=8 4;" parent="1" vertex="1">
-          <mxGeometry x="360" y="270" width="260" height="340" as="geometry" />
+          <mxGeometry x="1170" y="130" width="350" height="340" as="geometry" />
         </mxCell>
         <mxCell id="styles" style="html=1;fontSize=12;fontColor=#1E1E1E;" parent="1" visible="0" />
         <mxCell id="lab_external" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Медицинская&lt;br&gt;лаборатория&lt;/div&gt;&lt;div&gt;[Внешний субъект]&lt;/div&gt;" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="414" y="480" width="160" height="100" as="geometry" />
+          <mxGeometry x="1230" y="320" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="doctor" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Врач&lt;/div&gt;&lt;div&gt;[Инициатор]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="-110" y="342.5" width="60" height="115" as="geometry" />
-        </mxCell>
-        <mxCell id="admin" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Администратор&lt;/div&gt;&lt;div&gt;[Исполнитель]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="630" y="590" width="60" height="115" as="geometry" />
+        <mxCell id="doctor" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Врач&lt;/div&gt;&lt;div&gt;[Инициатор]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:10px;color:#2E7D32;&quot;&gt;цифровая подпись&lt;/font&gt;&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="-270" y="135" width="60" height="115" as="geometry" />
         </mxCell>
         <mxCell id="patient" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Пациент&lt;/div&gt;&lt;div&gt;[Участник]&lt;/div&gt;" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="100" y="520" width="60" height="115" as="geometry" />
+          <mxGeometry x="-280" y="610" width="60" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="proc31" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.1&lt;/div&gt;&lt;div&gt;Формирование&lt;/div&gt;&lt;div&gt;направления&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry y="90" width="120" height="80" as="geometry" />
+        <mxCell id="proc31" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.1&lt;/div&gt;&lt;div&gt;Формирование&lt;/div&gt;&lt;div&gt;электронного&lt;/div&gt;&lt;div&gt;направления&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;QR-код, цифровая подпись&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="20" y="150" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="proc32" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.2&lt;/div&gt;&lt;div&gt;Передача&lt;/div&gt;&lt;div&gt;биоматериала&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="230" y="120" width="120" height="80" as="geometry" />
+        <mxCell id="proc32" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.2&lt;/div&gt;&lt;div&gt;Передача&lt;/div&gt;&lt;div&gt;биоматериала&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;со штрих-кодом&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="310" y="460" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="proc33" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.3&lt;/div&gt;&lt;div&gt;Генерация&lt;/div&gt;&lt;div&gt;результатов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="460" y="300" width="120" height="80" as="geometry" />
+        <mxCell id="proc33" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.3&lt;/div&gt;&lt;div&gt;Генерация&lt;/div&gt;&lt;div&gt;результатов&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;привязка к штрих-коду&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="160" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="proc34" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.4&lt;/div&gt;&lt;div&gt;Передача&lt;/div&gt;&lt;div&gt;результатов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="540" y="90" width="120" height="80" as="geometry" />
+        <mxCell id="proc34" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.4&lt;/div&gt;&lt;div&gt;Защищенная&lt;/div&gt;&lt;div&gt;передача&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;mTLS/SFTP&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="650" y="250" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="proc35" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.5&lt;/div&gt;&lt;div&gt;Сохранение&lt;/div&gt;&lt;div&gt;результатов&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="660" y="370" width="120" height="80" as="geometry" />
+        <mxCell id="proc35" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;3.5&lt;/div&gt;&lt;div&gt;Автоматическое&lt;/div&gt;&lt;div&gt;сопоставление&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:9px;&quot;&gt;сохранение в ЕМК&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E9F2FF;strokeColor=#1E6F9F;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="320" y="220" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="lab_registry" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Laboratory Registry&lt;/div&gt;&lt;div&gt;[RegistryByDate.xlsx]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="890" y="120" width="150" height="80" as="geometry" />
+        <mxCell id="emk_storage" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;ЕМК пациента&lt;/div&gt;&lt;div&gt;[БД МИС]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size:10px;&quot;&gt;результаты анализов&lt;/font&gt;&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="330" y="60" width="140" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="patient_folder" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Папка пациента&lt;/div&gt;&lt;div&gt;[Файловая система]&lt;/div&gt;" style="shape=folder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="1040" y="310" width="140" height="80" as="geometry" />
+        <mxCell id="archive" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;Система&lt;br&gt;архивации&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="150" y="380" width="140" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="doctor_conn1" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="doctor" target="proc31" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="80" y="340" as="sourcePoint" />
-            <mxPoint x="100" y="240" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="40" y="270" />
-            </Array>
+        <mxCell id="sftp_storage" value="&lt;div style=&quot;font-size:14px;font-weight:bold;&quot;&gt;SFTP-сервер&lt;/div&gt;&lt;div&gt;[защищенная зона]&lt;/div&gt;" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="700" y="-10" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor_conn" value="создает назначение" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="doctor" target="proc31" edge="1">
+          <mxGeometry x="-0.3468" y="6" relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="flow31" value="&lt;div&gt;Бумажный документ/Устно&lt;/div&gt;&lt;div&gt;[Назначение]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc31" target="patient" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="140" y="220" as="sourcePoint" />
-            <mxPoint x="200" y="410" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="110" y="290" />
-              <mxPoint x="120" y="380" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="flow31" value="&lt;div&gt;Сохранение направления&lt;/div&gt;&lt;div&gt;[с QR-кодом]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc31" target="emk_storage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="flow32" value="&lt;div&gt;Биоматериал + Направление&lt;/div&gt;&lt;div&gt;[ФИО, дата рождения, анализ]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="patient" target="proc32" edge="1">
-          <mxGeometry x="-0.3004" y="-5" width="160" relative="1" as="geometry">
-            <mxPoint x="220" y="470" as="sourcePoint" />
-            <mxPoint x="250" y="370" as="targetPoint" />
+        <mxCell id="flow32" value="&lt;div&gt;Печать этикетки&lt;/div&gt;&lt;div&gt;[со штрих-кодом]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;dashed=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.851;entryY=0.307;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="proc31" target="patient" edge="1">
+          <mxGeometry x="-0.298" y="-2" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="260" y="400" />
+              <mxPoint x="50" y="420" />
+              <mxPoint x="-10" y="500" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="flow33" value="&lt;div&gt;Передача материалов&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc32" target="lab_external" edge="1">
-          <mxGeometry x="-0.285" y="17" width="160" relative="1" as="geometry">
-            <mxPoint x="300" y="360" as="sourcePoint" />
-            <mxPoint x="390" y="390" as="targetPoint" />
+        <mxCell id="flow33" value="&lt;div&gt;Пробирка со штрих-кодом&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="patient" target="proc32" edge="1">
+          <mxGeometry x="0.3083" y="-14" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="330" y="370" />
+              <mxPoint x="10" y="590" />
+              <mxPoint x="100" y="500" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="flow34" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="lab_external" target="proc33" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="460" y="380" as="sourcePoint" />
-            <mxPoint x="460" y="370" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="flow35" value="&lt;div&gt;Результаты&lt;/div&gt;&lt;div&gt;[PDF/Excel/JPG]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc33" target="proc34" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="520" y="300" as="sourcePoint" />
-            <mxPoint x="600" y="250" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="flow36" value="&lt;div&gt;Копирование через сеть&lt;/div&gt;&lt;div&gt;[Результаты анализов]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc34" target="lab_registry" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="660" y="220" as="sourcePoint" />
-            <mxPoint x="800" y="200" as="targetPoint" />
+        <mxCell id="flow34" value="&lt;div&gt;Передача материалов&lt;/div&gt;&lt;div&gt;[без ФИО]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc32" target="lab_external" edge="1">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="720" y="210" />
+              <mxPoint x="550" y="490" />
+              <mxPoint x="800" y="500" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="admin_conn1" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;" parent="1" source="admin" target="proc35" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="660" y="520" as="sourcePoint" />
-            <mxPoint x="760" y="460" as="targetPoint" />
+        <mxCell id="flow35" value="выполняет" style="endArrow=open;html=1;fontSize=11;strokeWidth=1.5;strokeColor=#999999;endFill=0;dashed=1;exitX=0.623;exitY=0.045;exitDx=0;exitDy=0;entryX=0.536;entryY=0.987;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="lab_external" target="proc33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow36" value="&lt;div&gt;Результаты&lt;/div&gt;&lt;div&gt;[привязанные к штрих-коду]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="proc33" target="proc34" edge="1">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="700" y="500" />
+              <mxPoint x="880" y="280" />
+              <mxPoint x="820" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="flow37" value="&lt;div&gt;Ручное копирование&lt;/div&gt;&lt;div&gt;[Результаты]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc35" target="patient_folder" edge="1">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="820" y="420" as="sourcePoint" />
-            <mxPoint x="970" y="400" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="flow37" value="&lt;div&gt;mTLS/SFTP: Результаты&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#2E7D32;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="proc34" target="sftp_storage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="flow38" value="&lt;div&gt;Чтение файлов&lt;/div&gt;&lt;div&gt;[поиск пациента]&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;" parent="1" source="lab_registry" target="proc35" edge="1">
-          <mxGeometry x="-0.3171" y="-2" width="160" relative="1" as="geometry">
-            <mxPoint x="880" y="240" as="sourcePoint" />
-            <mxPoint x="780" y="420" as="targetPoint" />
+        <mxCell id="flow38" value="&lt;div&gt;Автоматический импорт&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="sftp_storage" target="proc35" edge="1">
+          <mxGeometry x="-0.3964" y="-1" relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="860" y="320" />
-              <mxPoint x="800" y="380" />
+              <mxPoint x="630" y="80" />
+              <mxPoint x="580" y="200" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №3: Лабораторный процесс (обмен данными с внешней лабораторией)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="200" y="10" width="500" height="40" as="geometry" />
+        <mxCell id="flow39" value="&lt;div&gt;Сохранение в ЕМК&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="proc35" target="emk_storage" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="problem_comment" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#CC0000;&quot;&gt;⚠ КЛЮЧЕВАЯ ПРОБЛЕМА&lt;/div&gt;&lt;div&gt;Неконтролируемый доступ лаборатории к корпоративной сети.&lt;/div&gt;&lt;div&gt;Ручная идентификация пациента при загрузке → высокий риск ошибок (результаты Иванова могут попасть в папку Петрова).&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6E6;strokeColor=#CC0000;strokeWidth=2;fontSize=12;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
-          <mxGeometry x="340" y="740" width="480" height="70" as="geometry" />
+        <mxCell id="flow310" value="&lt;div&gt;Копия в архив&lt;/div&gt;" style="endArrow=classic;html=1;fontSize=11;strokeWidth=2;strokeColor=#666666;endFill=1;dashed=1;curved=1;labelBackgroundColor=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="proc35" target="archive" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="380" />
+              <mxPoint x="250" y="340" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр/Папка - Хранилище&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель&lt;/div&gt;&lt;div&gt;➡️ Стрелка - Поток данных&lt;/div&gt;&lt;div&gt;🔴 Красная рамка - Проблема/риск&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
-          <mxGeometry x="970" y="520" width="200" height="160" as="geometry" />
+        <mxCell id="antivirus" value="&lt;div&gt;🛡️ Антивирусная&lt;br&gt;проверка&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#2E7D32;strokeWidth=1;fontSize=10;align=center;" parent="1" vertex="1">
+          <mxGeometry x="820" y="140" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="title" value="&lt;div style=&quot;font-size:18px;font-weight:bold;&quot;&gt;DFD №3: Лабораторный процесс (Целевое состояние)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="-50" y="-70" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="improvement_comment" value="&lt;div style=&quot;font-size:14px;font-weight:bold;color:#2E7D32;&quot;&gt;✅ ЦЕЛЕВОЕ СОСТОЯНИЕ&lt;/div&gt;&lt;div&gt;• Штрих-коды вместо ФИО (обезличивание)&lt;/div&gt;&lt;div&gt;• mTLS/SFTP с взаимной аутентификацией&lt;/div&gt;&lt;div&gt;• Автоматическое сопоставление результатов&lt;/div&gt;&lt;div&gt;• Антивирусная проверка в DMZ&lt;/div&gt;&lt;div&gt;• Цифровая подпись врача и лаборатории&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;fontSize=12;align=left;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="450" y="660" width="500" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;div style=&quot;font-size:12px;&quot;&gt;&lt;b&gt;Условные обозначения:&lt;/b&gt;&lt;/div&gt;&lt;hr&gt;&lt;div&gt;🔵 Прямоугольник - Процесс&lt;/div&gt;&lt;div&gt;⚪ Двойной овал - Внешний субъект&lt;/div&gt;&lt;div&gt;📁 Цилиндр - Хранилище&lt;/div&gt;&lt;div&gt;👤 Актор - Исполнитель&lt;/div&gt;&lt;div&gt;🟢 Зеленая граница - Защищенный периметр&lt;/div&gt;&lt;div&gt;🟢 Зеленая стрелка - mTLS/SFTP&lt;/div&gt;&lt;div&gt;🔴 Красная рамка (было) - Проблема&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#A680B8;strokeColor=#cccccc;labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="990" y="660" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="problem_comment_old" value="&lt;div style=&quot;font-size:12px;font-weight:bold;color:#CC0000;&quot;&gt;⚠ БЫЛО:&lt;/div&gt;&lt;div&gt;Неконтролируемый доступ&lt;br&gt;Ручное копирование&lt;br&gt;Риск ошибок&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6E6;strokeColor=#CC0000;strokeWidth=1;fontSize=10;align=center;verticalAlign=middle;fontColor=#404040;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="520" width="180" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
